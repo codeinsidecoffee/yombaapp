@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#DF01579B</color>
+    <color name="colorPrimaryDark">#DF024275</color>
+    <color name="colorAccent">#DF01579B</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="txt_color">#C9000000</color>
+    <color name="btn_color">#fef2a4</color>
+    <color name="btn_txt_color">#123568</color>
+    <color name="term_heading">#2092d8</color>
+    <color name="blue_btn_color">#269ddd</color>
+    <color name="grey">#eaeaea</color>
+    <color name="txt_dark_color">#0e4678</color>
+    <color name="txt_amazing">#4a0531</color>
+    <color name="map_bg">#eef9fd</color>
+    <color name="story_bg">#0e4678</color>
+    <color name="txt_yellow_color">#FEF2A4</color>
+    <color name="solve_btn_color">#ba0f77</color>
+    <color name="red">#FF0000</color>
+    <color name="transpernt_white">#EEF4F9FC</color>
+    <color name="crook_btn">#0e4678</color>
+
+    <color name="progress_start_color">#2092D8</color>
+    <color name="progress_end_color">#BA0F77</color>
+    <color name="btn_grey">#F7747474</color>
+    <color name="btn_summary">#00d239</color>
+    <color name="orange">#DD1F1F</color>
+    <color name="lightblack">#41191C51</color>
+</resources>

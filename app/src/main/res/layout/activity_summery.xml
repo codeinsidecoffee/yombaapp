@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homescreen"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.PlayActivity">
+
+    <RelativeLayout
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/term_heading">
+
+        <TextView
+            android:id="@+id/btn_clue"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/opensansbold"
+            android:gravity="center"
+            android:text="@string/sum_msg8"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/heading"
+        android:background="@color/transpernt_white"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/btn_crook"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/crook_btn_shape"
+                android:gravity="center"
+                android:text="@string/sum_msg9"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/btn_exchange"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/exchange"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/btn_aviv"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/blue_btn_shape"
+                android:gravity="center"
+                android:text="Tel Aviv"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/footer"
+            android:layout_below="@+id/linear1"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="0dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/horizontal_line_shape"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="8"
+                                android:gravity="center_vertical"
+                                android:text="@string/sum_msg10"
+                                android:textColor="@color/txt_color"
+                                android:textSize="@dimen/txt_size"
+                                android:textStyle="bold" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/overalltime"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="10"
+                                android:gravity="center_vertical" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/horizontal_line_shape"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="8"
+                                android:gravity="center_vertical"
+                                android:text="@string/sum_msg11"
+                                android:textColor="@color/txt_color"
+                                android:textSize="@dimen/txt_size"
+                                android:textStyle="bold" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/alltimerank"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="10"
+                                android:gravity="center_vertical" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/horizontal_line_shape"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="8"
+                                android:gravity="center_vertical"
+                                android:text="@string/sum_msg12"
+                                android:textColor="@color/txt_color"
+                                android:textSize="@dimen/txt_size"
+                                android:textStyle="bold" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/currentmonthrank"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="10"
+                                android:gravity="center_vertical" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/horizontal_line_shape"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="8"
+                                android:gravity="center_vertical"
+                                android:text="@string/sum_msg13"
+                                android:textColor="@color/txt_color"
+                                android:textSize="@dimen/txt_size"
+                                android:textStyle="bold" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/clueused"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="10"
+                                android:gravity="center_vertical" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/horizontal_line_shape"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="8"
+                                android:gravity="center_vertical"
+                                android:text="@string/sum_msg14"
+                                android:textColor="@color/txt_color"
+                                android:textSize="@dimen/txt_size"
+                                android:textStyle="bold" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/savemeused"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="10"
+                                android:gravity="center_vertical" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/horizontal_line_shape"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="8"
+                                android:gravity="center_vertical"
+                                android:text="@string/sum_msg15"
+                                android:textColor="@color/txt_color"
+                                android:textSize="@dimen/txt_size"
+                                android:textStyle="bold" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/gameplayno"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="10"
+                                android:gravity="center_vertical" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/term_heading">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="10"
+                            android:background="@drawable/terms_condition_shape"
+                            android:gravity="center"
+                            android:text="@string/total_score"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/txt_size"
+                            android:textStyle="bold" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/totalscore"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="10"
+                            android:gravity="center_vertical" />
+
+                        <ImageView
+                            android:id="@+id/img_info"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/ic_info" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_email"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_above="@+id/footer"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/crook_btn_shape"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/email_us"
+            android:textColor="@color/white"
+            android:textSize="@dimen/btn_txt_size" />
+
+        <RelativeLayout
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_facebook"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_facebook" />
+
+                <ImageView
+                    android:id="@+id/img_insta"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_instagram" />
+
+                <ImageView
+                    android:id="@+id/img_whatsApp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/whatsapp" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+ </RelativeLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1094028488207",
+    "firebase_url": "https://yomba-game-app.firebaseio.com",
+    "project_id": "yomba-game-app",
+    "storage_bucket": "yomba-game-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1094028488207:android:b7292103f81936092b3d7a",
+        "android_client_info": {
+          "package_name": "com.yomba"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1094028488207-nu9e6tcvbrsq1lo5oqjsrc1bcr0bvj3i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUVxjCWrj3UjyNCL9o4_c0cKJ0HWhSd2o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1094028488207-nu9e6tcvbrsq1lo5oqjsrc1bcr0bvj3i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

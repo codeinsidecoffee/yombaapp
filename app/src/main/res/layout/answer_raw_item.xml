@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:id="@+id/chbRoot"
+    android:clickable="true"
+    android:gravity="center"
+    >
+    <ImageView
+        android:id="@+id/chb_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:id="@+id/text_ans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Blaa...Blaa.."
+        android:textStyle="bold"
+        android:textSize="@dimen/txt_size"
+        android:button="@null"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="10dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        />
+</LinearLayout>
